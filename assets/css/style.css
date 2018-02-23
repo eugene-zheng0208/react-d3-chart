@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Page header styles */
+
+.header {
+    background-color: #222;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+/* Bar chart styles */
+
+.chart-container {
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 65vw;
+    overflow: auto;
+}
+
+.axis path,
+.axis line {
+    stroke: #333;
+}
+
+.axis text {
+    font-size: 13px;
+    fill: black;
+}
+
+.axis-Bottom text {
+    text-anchor: middle;
+}
+
+
+/* Pie chart styles */
+
+.pie-label {
+    font-size: 14px;
+    text-anchor: middle;
+    color: #222;
+}
+
+
+/* Chart hover styles */
+
+.bar-chart:hover,
+.pie-chart:hover {
+    fill: #555;
+}
+
+
+/* Tab styles */
+
+.react-tabs__tab-list {
+    border-bottom: 1px solid #aaa;
+    margin: 0 0 10px;
+    padding: 0;
+    background: #e4e4e4;
+    text-align: center !important;
+    list-style-type: disc;
+}
+
+.react-tabs__tab--selected {
+    background: #fff;
+    border-color: #aaa !important;
+    color: black;
+    border-radius: 5px 5px 0 0;
+}
+
+.react-tabs__tab {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/* Tab button styles */
+
+.tab-btn {
+    margin-left: 30px;
+    display: inline-block;
+    font-size: 15px;
+    background-color: #ccc;
+    color: #121212;
+    padding: 6px 8px;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.tab-btn:hover {
+    background: #8a8a8a;
+    color: #fff;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 980px) {
+    .chart-container {
+        margin: 0 auto;
+        margin-top: 15px;
+        padding: 10px;
+        max-width: 85vw;
+        overflow: auto;
+    }
+}
